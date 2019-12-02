@@ -32,6 +32,7 @@ recall is going to be the most significant metric here. In the process of cost a
 we don’t mind placing a few calls where the person receiving the call does not buy the term deposit
 after talking to the salesperson. From the EDA below we can see that, an unsuccessful call may lead
 to a successful call in future. So, improving precision is the secondary objective here.
+![](https://github.com/Mimimkh/Machine-learning/blob/master/tele-marketing.JPG)
 
 So, instead of F1 score evaluation, our focus will be to improve F-beta score of positive class with more
 weightage on recall [3].

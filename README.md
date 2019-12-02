@@ -4,7 +4,7 @@ Telemarketing is an effective strategy of selling goods and services by using ph
 growing competition rates in the business world, tele-sales need innovation. Machine learning can boost
 this business by identifying potential buyers more precisely. In this project, we will be working with direct
 telemarketing campaign data of a Portuguese banking institution, retrieved from MCI Machine Learning
-Repository(link).
+Repository.
 
 This is a binary classification problem, where target variable indicates if term deposit was purchased or
 not. This target is highly imbalanced, out of 37000 + instances only 35 00 observations have purchased
@@ -37,19 +37,6 @@ So, instead of F1 score evaluation, our focus will be to improve F-beta score of
 weightage on recall [3].
 
 Below is our evaluation metric.
-
-# 퐹훽 =( 1 +훽
-
-## 2
-
-# )
-
-## 푝푟푒푐푖푠푖표푛∗푟푒푐푎푙푙
-
-## (훽^2 ∗푝푟푒푐푖푠푖표푛)+푟푒푐푎푙푙
-
-# 훽= 2
-
 
 # Approach Description, Result Presentation and Analysis:
 
@@ -110,16 +97,6 @@ Below is classification report of two models on test dataset.
 
 F-beta score of neural network
 
-```
-5 ∗ 0. 38 ∗ 0. 45
-```
-### 4 ∗ 0. 38 + 0. 45 =^ 0.43, F-beta score of random forest^
-
-```
-5 ∗ 0. 42 ∗ 0. 42
-```
-### 4 ∗ 0. 42 + 0. 42 =^ 0.42.^
-
 Neural network provides slightly better F-beta score.
 
 Below is the ROC curve of the two models on test dataset.
@@ -142,11 +119,11 @@ training the neural network.
 
 
 We can see the neural network model was selected before it reached the point of overfitting. That’s the
-reason this model gives similar result on all the datasets. Whereas, in-spite of using cross validation
+reason this model gives similar result on all the dataset. Whereas, in-spite of using cross validation
 and hyper-parameter tuning, random forest suffers from overfitting. We can visualize the difference
 between these two models from the classification report on train data set.
 
-Comparing this report with test dataset report (provided in page 3), we can say neural network provides
+Comparing this report with test dataset report, we can say neural network provides
 more robust and reliable result across all the datasets.
 
 So, we are going to choose neural network as our final model for reliability and better F-beta value of
@@ -177,11 +154,8 @@ References:-
 
 #### 1. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4349800/
 
-#### 2. https://classeval.wordpress.com/simulation-analysis/roc-and-precision-recall-with-
-
-#### imbalanced-datasets/
+#### 2. https://classeval.wordpress.com/simulation-analysis/roc-and-precision-recall-with-imbalanced-datasets/
 
 #### 3. http://www.marcelonet.com/snippets/machine-learning/evaluation-metrix/f-beta-score
-
 
 

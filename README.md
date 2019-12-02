@@ -39,6 +39,8 @@ weightage on recall [3].
 
 Below is our evaluation metric.
 
+![](https://github.com/Mimimkh/Machine-learning/blob/master/tele2.JPG)
+
 # Approach Description, Result Presentation and Analysis:
 
 We have built two classifiers -random forest and neural network, to solve this problem.
@@ -95,12 +97,13 @@ better F-beta score.
 
 Below is classification report of two models on test dataset.
 
-
-F-beta score of neural network
+![](https://github.com/Mimimkh/Machine-learning/blob/master/tele3.JPG)
 
 Neural network provides slightly better F-beta score.
 
 Below is the ROC curve of the two models on test dataset.
+
+![](https://github.com/Mimimkh/Machine-learning/blob/master/tele4.JPG)
 
 Neural model provides a little better result. But we are not going to consider ROC curve as a metric of
 model performance for this problem. ROC plot can be misleading when applied to strongly imbalanced
@@ -113,16 +116,21 @@ baseline/random auc of PR curve becomes 0.09 [2]
 
 (random = Num of positive data/ (num of positive data+ number of negative data)).
 
+![](https://github.com/Mimimkh/Machine-learning/blob/master/tele5.JPG)
+
 We can see both the models offer similar performance and performs better than baseline model. So,
 there are very little difference between these two models and whichever model can provide better robust
 prediction should be the final one. Below loss and accuracy data was captured on holdout dataset while
 training the neural network.
 
+![](https://github.com/Mimimkh/Machine-learning/blob/master/tele6.JPG)
 
 We can see the neural network model was selected before it reached the point of overfitting. That’s the
 reason this model gives similar result on all the dataset. Whereas, in-spite of using cross validation
 and hyper-parameter tuning, random forest suffers from overfitting. We can visualize the difference
 between these two models from the classification report on train data set.
+
+![](https://github.com/Mimimkh/Machine-learning/blob/master/tele7.JPG)
 
 Comparing this report with test dataset report, we can say neural network provides
 more robust and reliable result across all the datasets.
